@@ -42,7 +42,7 @@ export const Chat=(props)=>{
     return( <div className="chat-app">
          {/* to handle event after submitting  form */}
          <div className="header">
-            <h1>Welcome to :{room.toUpperCase()}</h1>
+            <h1> Room :{room.toUpperCase()}</h1>
          </div>
          {/* to display messages */}
          <div className="messages">{messages.map((message)=>(
