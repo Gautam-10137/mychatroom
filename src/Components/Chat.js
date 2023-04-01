@@ -52,7 +52,7 @@ export const Chat=(props)=>{
                 {/* to add user name and time stamp */}
                 <span className="user">
                     
-                    {console.log(message)}
+                    {/* {console.log(message)} */}
                     </span>
                 {message.text}
             </div>
