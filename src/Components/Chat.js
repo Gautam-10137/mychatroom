@@ -48,7 +48,9 @@ export const Chat=(props)=>{
          <div className="messages">{messages.map((message)=>(
             <div className="message" key={message.id}>
                 {/* to add user name and time stamp */}
-                <span className="user">{message.user}</span>
+                <span className="user">
+//                     {message.user}
+</span>
                 {message.text}
             </div>
          ))}</div>
