@@ -4,6 +4,7 @@ import {auth,db} from "../firebase-config"
 import "../styles/Chat.css"
 export const Chat=(props)=>{
     const{room}=props;
+   
     const [newMessage,setNewMessage]=useState("");
     const [messages,setMessages]=useState([]);
     const messagesRef=collection(db,"messages");
@@ -45,10 +46,14 @@ export const Chat=(props)=>{
             <h1> Room :{room.toUpperCase()}</h1>
          </div>
          {/* to display messages */}
+         
          <div className="messages">{messages.map((message)=>(
             <div className="message" key={message.id}>
                 {/* to add user name and time stamp */}
-                <span className="user">{message.user}</span>
+                <span className="user">
+                    
+                    {console.log(message)}
+                    </span>
                 {message.text}
             </div>
          ))}</div>
